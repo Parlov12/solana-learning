@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/ubuntu/solana-projects/voting-application/src/components/account/account-list-feature.tsx"],"sourcesContent":["'use client'\n\nimport { WalletButton } from '../solana/solana-provider'\n\nimport { redirect } from 'next/navigation'\nimport { useWalletUi } from '@wallet-ui/react'\n\nexport default function AccountListFeature() {\n  const { account } = useWalletUi()\n\n  if (account) {\n    return redirect(`/account/${account.address.toString()}`)\n  }\n\n  return (\n    <div className=\"hero py-[64px]\">\n      <div className=\"hero-content text-center\">\n        <WalletButton />\n      </div>\n    </div>\n  )\n}\n"],"names":[],"mappings":";;;;AAEA;AAEA;AACA;AALA;;;;;AAOe,SAAS;IACtB,MAAM,EAAE,OAAO,EAAE,GAAG,CAAA,GAAA,iLAAA,CAAA,cAAW,AAAD;IAE9B,IAAI,SAAS;QACX,OAAO,CAAA,GAAA,kIAAA,CAAA,WAAQ,AAAD,EAAE,CAAC,SAAS,EAAE,QAAQ,OAAO,CAAC,QAAQ,IAAI;IAC1D;IAEA,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAI,WAAU;sBACb,cAAA,8OAAC,kJAAA,CAAA,eAAY;;;;;;;;;;;;;;;AAIrB","debugId":null}}]
+}
