@@ -1,0 +1,43 @@
+- blockchain - ledger that is shared and immutable
+
+- immutable 
+
+benefites of blockchain:
+
+-> decentralisation of trust
+-> immutability
+-> security
+
+- program - piece of code that runs on the blockchain
+
+
+Solana vs Solidity
+
+-> faster transactions - <1s vs 10s
+-> cheaper <0.10$ vs possibly hunders of $
+> easier to program
+-> better for environments
+-> newer and expanding rapidly
+
+- Solana compared to Email address
+
+-> public key = email address
+-> secret key = password
+-> send/receive SOL = send/receive emails
+
+Voting Application
+
+- SETTING UP ENVIRONMENT
+
+- windows - wsl
+
+- quick install
+-> curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y 
+
+SETTING UP PROJECT
+
+	
+
+
+
+

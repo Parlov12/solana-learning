@@ -1,0 +1,59 @@
+Rust
+- cargo - the rust build tool and package manager
+
+cargo new [project_name]
+
+cargo add [dependency_name]
+
+cargo build - create binary executable file which you can run
+
+cargo run - automatically runs
+
+cargo check - to check fast if code compiles but doesn't produce executable
+
+cargo build --release - to compile it with optimizations
+
+cargo update - to update crates
+
+cargo doc --open - builds document with all dependencies so we can search through them 
+
+- trait?
+
+- rustc file.rs - makes binary executable
+
+example:
+
+fn main(){
+ println!("Hello, world!");
+}
+
+- println! - ! - println! calls a Rust macro because of !...if it was entered without !, it would call function instead
+
+- crate - name of external rust package/library
+
+	NUMBERS IN RUST
+
+- i32 - numbers between 1 and 100
+- u32 - unsigned 32-bit number
+- i64 - 64-bit number
+
+
+	VARIABLES
+
+- defining variable in rust
+
+let mut name = String::new();
+
+let apples = 5;
+
+- variables in rust are mutable by default
+
+- let mut [variable_name] = … - making variable mutable
+
+example:
+
+    io::stdin()
+        .read_line(&mut guess)
+        .expect("Failed to read line!");
+
+- &mut guesss - reference to variable guess. Reference is by default also immutable so we have to add mut in front
