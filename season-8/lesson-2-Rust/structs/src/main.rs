@@ -24,8 +24,12 @@ fn main() {
 
     println!("Point values: {}, {}, {}", x, y, z);
 
+    println!("new_tuple = {new_tuple:?}");
+
+    new_user.getData();
 }
 
+#[derive(Debug)]
 struct User {
     name: String,
     surname: String,
@@ -34,4 +38,14 @@ struct User {
     sign_in_count: u64
 }
 
+impl User {
+    fn getData(&self) { // or &mut self
+        println!("name: {}\nsurname: {}", self.name, self.surname);
+    }
+}
+
+// type Color cannot take Point as an argument even though both 
+// types are made up of threee i32 values!
+#[derive(Debug)]
 struct Point(i32, i32, i32);
+struct Color(i32, i32, i32);
