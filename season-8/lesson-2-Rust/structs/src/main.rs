@@ -1,7 +1,7 @@
 fn main() {
     println!("Hello, world!");
 
-    let new_user = User {
+    let mut new_user = User {
         name: String::from("Petar"),
         surname: String::from("Parlov"),
         active: true,
@@ -27,6 +27,8 @@ fn main() {
     println!("new_tuple = {new_tuple:?}");
 
     new_user.getData();
+
+    new_user.changeName(String::from("Hello"));
 }
 
 #[derive(Debug)]
@@ -41,6 +43,10 @@ struct User {
 impl User {
     fn getData(&self) { // or &mut self
         println!("name: {}\nsurname: {}", self.name, self.surname);
+    }
+
+    fn changeName(&mut self, name: String) {
+        self.name = name
     }
 }
 
