@@ -17,6 +17,8 @@ fn main() {
 
     value_in_cents(new_coin);
 
+
+
 }
 
 enum IpAddrVersion {
@@ -52,6 +54,13 @@ fn value_in_cents(coin: Coin) -> u8 {
             println!("State quarter from {state:?}!");
             25
         }
+    }
+}
+
+fn plus_one(x: Option<i32>) -> Option<i32> {
+    match x {
+        Some(i) -> i + 1,
+        None -> None,
     }
 }
 
