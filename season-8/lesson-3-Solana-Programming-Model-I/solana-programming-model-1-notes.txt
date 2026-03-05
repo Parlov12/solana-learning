@@ -1,0 +1,13 @@
+Overview
+
+- An app interacts with a Solana cluster by sending it transaction with one or more instructions
+- The Solana runtime passes those instructions to programs deployed by app developers beforehand.
+
+Me as a programmer, create solana program, then we deploy it to desired cluster - devnet or mainnet and then users can interact with our program.
+
+Deploying to cluster means - all validators have syncronized state - all validators have my program.
+
+- Instructions are executed sequentially and atomically for each transaction.
+
+- If any instruction is invalid, all account changes in the transaction are discarded.
+
